@@ -1,0 +1,184 @@
+{
+  "editor": {
+    "entityTextureMode": false,
+    "allAngles": true
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "charcoal": "procession:material/charcoal",
+    "rust": "procession:material/rust",
+    "linen": "procession:material/linen",
+    "timber": "procession:material/timber",
+    "teal": "procession:material/teal",
+    "dark": "procession:material/dark",
+    "stone": "procession:material/stone"
+  },
+  "elements": [
+    {
+      "name": "origin",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrigin": [
+        8,
+        0,
+        8
+      ],
+      "faces": {},
+      "children": [
+        {
+          "name": "fragment",
+          "from": [
+            3,
+            6,
+            5
+          ],
+          "to": [
+            13,
+            9,
+            11
+          ],
+          "faces": {
+            "north": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "name": "seam",
+          "from": [
+            5,
+            9,
+            6
+          ],
+          "to": [
+            11,
+            9.5,
+            10
+          ],
+          "faces": {
+            "north": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "east": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "south": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "west": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "up": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "down": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

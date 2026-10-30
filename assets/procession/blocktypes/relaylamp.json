@@ -1,0 +1,82 @@
+{
+  "code": "relaylamp",
+  "shape": {
+    "base": "procession:block/relaylamp"
+  },
+  "textures": {
+    "charcoal": {
+      "base": "procession:material/charcoal"
+    },
+    "rust": {
+      "base": "procession:material/rust"
+    },
+    "linen": {
+      "base": "procession:material/linen"
+    },
+    "timber": {
+      "base": "procession:material/timber"
+    },
+    "teal": {
+      "base": "procession:material/teal"
+    },
+    "dark": {
+      "base": "procession:material/dark"
+    },
+    "stone": {
+      "base": "procession:material/stone"
+    }
+  },
+  "creativeinventory": {
+    "decorative": [
+      "*"
+    ],
+    "general": [
+      "*"
+    ]
+  },
+  "blockmaterial": "Metal",
+  "drawtype": "json",
+  "replaceable": 0,
+  "resistance": 2,
+  "lightAbsorption": 0,
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "x2": 0.875,
+    "y2": 1,
+    "z2": 0.875,
+    "z1": 0.125
+  },
+  "selectionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "x2": 0.875,
+    "y2": 1,
+    "z2": 0.875,
+    "z1": 0.125
+  },
+  "sounds": {
+    "hit": "game:block/planks",
+    "place": "game:block/planks",
+    "break": "game:block/planks"
+  },
+  "guiTransform": {
+    "scale": 1.1,
+    "rotation": {
+      "z": 0,
+      "x": -15,
+      "y": 25
+    }
+  },
+  "lightHsv": [
+    25,
+    3,
+    11
+  ]
+}

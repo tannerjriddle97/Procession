@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "workingTitle": "The Procession: Until They Answer",
+  "role": "Documentary development catalog, not runtime configuration; tuning fields are not consumed by the game adapter.",
+  "decisionAuthority": "Autonomous playtest defaults under the user's 2026-10-29 development instruction.",
+  "implementationStatus": "implemented-source-subset-pending-gameplay-verification",
+  "progression": {
+    "levelSystem": false,
+    "requiresStormVictory": false,
+    "requiresSignatureRelics": false,
+    "requiresArchivesRecords": false,
+    "requiresConsumedEntranceKey": false,
+    "organicFinalSiteEntry": true,
+    "worldSharedBossUnlock": true,
+    "guaranteedClues": true,
+    "chartConsumedOnRead": false
+  },
+  "sites": [
+    {
+      "id": "relief-shelter",
+      "name": "Relief Shelter",
+      "role": "First survey stop and preparation landmark",
+      "distanceFromOriginalSpawn": { "minimum": 400, "maximum": 650 },
+      "routeTarget": "lower-relay",
+      "proposedLore": [ "P1" ],
+      "mandatoryVisit": false,
+      "implementationStatus": "compact-source-landmark-pending-gameplay-verification"
+    },
+    {
+      "id": "lower-relay",
+      "name": "Lower Relay",
+      "role": "Four deserted workstations and guaranteed final-expedition directions",
+      "distanceFromOriginalSpawn": { "minimum": 1600, "maximum": 2400 },
+      "routeTarget": "far-relay",
+      "proposedLore": [ "P5", "P6" ],
+      "mandatoryVisit": false,
+      "implementationStatus": "compact-source-landmark-pending-gameplay-verification"
+    },
+    {
+      "id": "far-relay",
+      "name": "Far Relay",
+      "role": "Separate guardian expedition and persistent world-control unlock",
+      "distanceFromOriginalSpawn": { "minimum": 6000, "maximum": 8000 },
+      "bossEntityCode": "procession:lastcustodian",
+      "requiresLore": [],
+      "requiresItems": [],
+      "mandatoryVisit": false,
+      "implementationStatus": "compact-source-landmark-and-guardian-pending-gameplay-verification"
+    }
+  ],
+  "placement": {
+    "reference": "original-world-spawn",
+    "deterministicWorldSeedBearing": true,
+    "oneSavedInstancePerSite": true,
+    "overwriteOccupiedBlocks": false,
+    "excavateTerrain": false,
+    "rejectClaims": true,
+    "rejectWater": true,
+    "validateBeforeWriting": true,
+    "invalidCandidate": "Keep pending and disclose; never mark an absent ruin complete."
+  },
+  "control": {
+    "rewardBlockCode": "procession:closingbell",
+    "scope": "world-wide",
+    "earnedBy": "last-custodian-defeat",
+    "ordinaryTemporalStormsContinue": true,
+    "initialMode": "allowed",
+    "toggleCost": 0,
+    "futureStormOnly": true,
+    "cancelActiveEncounter": false,
+    "lateEncounterCreation": false,
+    "maximumAuthorities": 1,
+    "authority": "owner-or-server-administrator",
+    "removalRestoresAllowed": true,
+    "offlineAndUnloadedPersistence": true,
+    "recoverAtClearedSiteWithoutBossRepeat": true,
+    "generationTokenRequired": true,
+    "replacementInvalidatesOlderTokens": true,
+    "implementationStatus": "implemented-in-source-pending-engine-persistence-and-multiplayer-tests"
+  },
+  "loreConstraints": {
+    "archiveExclusiveRecords": [ "P7", "P8" ],
+    "archiveCopiesAtRelays": false,
+    "mainCharacterIdentities": false,
+    "quartetHumanOriginConfirmed": false,
+    "missingWorkersIdentifiedAsMonsters": false
+  },
+  "deferredContent": [
+    "Relief Engine and Empty Stretcher optional wing",
+    "Eight special defender variants and two-special composition cap",
+    "Twelve practical field items",
+    "Four cosmetic pieces and ten furnishing families",
+    "Seven total ruin archetypes and manuscript placement",
+    "Custodian remembered attack lanes and full three-act presentation"
+  ]
+}

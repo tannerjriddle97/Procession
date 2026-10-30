@@ -1,0 +1,94 @@
+{
+  "code": "openingbell",
+  "class": "EntityAgent",
+  "tags": [
+    "mechanical",
+    "habitat-land"
+  ],
+  "weight": 200,
+  "canClimb": false,
+  "hitboxSize": {
+    "x": 0.8,
+    "y": 1.5
+  },
+  "selectionBoxSize": {
+    "x": 0.9,
+    "y": 1.5
+  },
+  "deadHitboxSize": {
+    "x": 0.8,
+    "y": 0.35
+  },
+  "eyeHeight": 1.35,
+  "attributes": {
+    "onDeathStabilityRecovery": 0,
+    "isMechanical": true,
+    "glitchAffected": true
+  },
+  "drops": [],
+  "client": {
+    "textures": {
+      "bell": {
+        "base": "game:entity/lore/bell/bell"
+      }
+    },
+    "size": 1.3,
+    "renderer": "Shape",
+    "animations": [
+      {
+        "animation": "idle",
+        "triggeredBy": {
+          "defaultAnim": true
+        },
+        "code": "idle",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "die",
+        "weight": 20,
+        "triggeredBy": {
+          "onControls": [
+            "dead"
+          ]
+        },
+        "code": "die",
+        "blendMode": "Average"
+      }
+    ],
+    "shape": {
+      "base": "game:entity/lore/bell/bell"
+    },
+    "behaviors": [
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "interpolateposition"
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "maxhealth": 100,
+        "code": "health",
+        "currenthealth": 100
+      },
+      {
+        "code": "deaddecay",
+        "hoursToDecay": 0.1
+      }
+    ]
+  }
+}

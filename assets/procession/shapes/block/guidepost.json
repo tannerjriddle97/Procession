@@ -1,0 +1,385 @@
+{
+  "editor": {
+    "entityTextureMode": false,
+    "allAngles": true
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "charcoal": "procession:material/charcoal",
+    "rust": "procession:material/rust",
+    "linen": "procession:material/linen",
+    "timber": "procession:material/timber",
+    "teal": "procession:material/teal",
+    "dark": "procession:material/dark",
+    "stone": "procession:material/stone"
+  },
+  "elements": [
+    {
+      "name": "origin",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrigin": [
+        8,
+        0,
+        8
+      ],
+      "faces": {},
+      "children": [
+        {
+          "name": "post",
+          "from": [
+            6,
+            0,
+            6
+          ],
+          "to": [
+            10,
+            16,
+            10
+          ],
+          "faces": {
+            "north": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "name": "board",
+          "from": [
+            2,
+            10,
+            2
+          ],
+          "to": [
+            14,
+            14,
+            5
+          ],
+          "faces": {
+            "north": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "name": "arrowshaft",
+          "from": [
+            4,
+            11.5,
+            1.75
+          ],
+          "to": [
+            11,
+            12.5,
+            2
+          ],
+          "faces": {
+            "north": {
+              "texture": "#charcoal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#charcoal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#charcoal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#charcoal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#charcoal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#charcoal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "name": "arrowhead",
+          "from": [
+            10,
+            10.5,
+            1.5
+          ],
+          "to": [
+            12,
+            13.5,
+            1.75
+          ],
+          "faces": {
+            "north": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "name": "binding",
+          "from": [
+            5.5,
+            7,
+            5.5
+          ],
+          "to": [
+            10.5,
+            9,
+            10.5
+          ],
+          "faces": {
+            "north": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#linen",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

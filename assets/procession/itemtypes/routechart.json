@@ -1,0 +1,57 @@
+{
+  "code": "routechart",
+  "class": "ProcessionRouteChart",
+  "shape": {
+    "base": "procession:item/routechart"
+  },
+  "textures": {
+    "charcoal": {
+      "base": "procession:material/charcoal"
+    },
+    "rust": {
+      "base": "procession:material/rust"
+    },
+    "linen": {
+      "base": "procession:material/linen"
+    },
+    "timber": {
+      "base": "procession:material/timber"
+    },
+    "teal": {
+      "base": "procession:material/teal"
+    },
+    "dark": {
+      "base": "procession:material/dark"
+    },
+    "stone": {
+      "base": "procession:material/stone"
+    }
+  },
+  "maxstacksize": 1,
+  "creativeinventory": {
+    "items": [
+      "*"
+    ],
+    "general": [
+      "*"
+    ]
+  },
+  "guiTransform": {
+    "scale": 1.8,
+    "rotation": {
+      "z": 15,
+      "x": -15,
+      "y": 20
+    }
+  },
+  "attributes": {
+    "handbook": {
+      "extraSections": [
+        {
+          "text": "Interact while holding this chart to read the direction to the next relay. It is reusable. The Far Relay can also be found and entered directly.",
+          "title": "Follow the return"
+        }
+      ]
+    }
+  }
+}

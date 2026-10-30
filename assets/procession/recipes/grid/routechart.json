@@ -1,0 +1,46 @@
+[
+  {
+    "ingredientPattern": "FS",
+    "width": 2,
+    "height": 1,
+    "ingredients": {
+      "F": {
+        "code": "procession:relayfragment",
+        "type": "item"
+      },
+      "S": {
+        "code": "game:stick",
+        "type": "item"
+      }
+    },
+    "output": {
+      "type": "item",
+      "quantity": 1,
+      "code": "procession:routechart"
+    }
+  },
+  {
+    "ingredientPattern": "LCS",
+    "width": 3,
+    "height": 1,
+    "ingredients": {
+      "S": {
+        "code": "game:stick",
+        "type": "item"
+      },
+      "L": {
+        "code": "game:cloth-plain",
+        "type": "item"
+      },
+      "C": {
+        "code": "game:charcoal",
+        "type": "item"
+      }
+    },
+    "output": {
+      "type": "item",
+      "quantity": 1,
+      "code": "procession:routechart"
+    }
+  }
+]

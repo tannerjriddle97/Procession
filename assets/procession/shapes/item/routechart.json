@@ -1,0 +1,253 @@
+{
+  "editor": {
+    "entityTextureMode": false,
+    "allAngles": true
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "charcoal": "procession:material/charcoal",
+    "rust": "procession:material/rust",
+    "linen": "procession:material/linen",
+    "timber": "procession:material/timber",
+    "teal": "procession:material/teal",
+    "dark": "procession:material/dark",
+    "stone": "procession:material/stone"
+  },
+  "elements": [
+    {
+      "name": "origin",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrigin": [
+        8,
+        0,
+        8
+      ],
+      "faces": {},
+      "children": [
+        {
+          "name": "baton",
+          "from": [
+            7,
+            1,
+            7
+          ],
+          "to": [
+            9,
+            14,
+            9
+          ],
+          "faces": {
+            "north": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#timber",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "name": "plate",
+          "from": [
+            3,
+            8,
+            5
+          ],
+          "to": [
+            13,
+            12,
+            7
+          ],
+          "faces": {
+            "north": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "east": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "south": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "west": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "up": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            },
+            "down": {
+              "texture": "#rust",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ]
+            }
+          }
+        },
+        {
+          "name": "mark",
+          "from": [
+            7,
+            8.5,
+            4.75
+          ],
+          "to": [
+            8,
+            11.5,
+            5
+          ],
+          "faces": {
+            "north": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "east": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "south": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "west": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "up": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            },
+            "down": {
+              "texture": "#teal",
+              "uv": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "glow": 90
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

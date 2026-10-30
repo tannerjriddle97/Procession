@@ -1,0 +1,12 @@
+{
+  "type": "code",
+  "modid": "procession",
+  "name": "The Procession",
+  "authors": ["The Procession project"],
+  "description": "Heavy-storm chanters, rescue-station exploration, a distant Custodian, and earned world-wide control over future Processions. Development alpha.",
+  "version": "0.1.0",
+  "side": "universal",
+  "requiredOnClient": true,
+  "requiredOnServer": true,
+  "dependencies": { "game": "1.22.7", "survival": "1.22.7" }
+}

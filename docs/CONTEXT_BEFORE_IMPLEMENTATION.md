@@ -1,0 +1,61 @@
+# Current context
+
+## Current state
+
+- Date: 2026-10-29, America/New_York.
+- Phase: concept/design recorded; no implementation plan approved, code, runtime tests, build, or release.
+- Project folder requested by user: `<project-root>`.
+- Working name: The Procession. Lost rescue operation selected as the lore direction; final names, exact ontology, mod ID, and license remain undecided.
+- Research baseline: installed Vintage Story 1.22.7 base assets; public survival source inspected separately. Neither effective mod-patched settings nor executable behavior was verified.
+- Loot revision: user requested one themed, powerful signature per chanter at about 15% chance. [V5 proposal](LOOT_DESIGN.md): Veiled → Last Call bow (prepared shot +25% bow/ammo contribution); Bound → Braceguard (up to3 extra damage absorbed on a strong active block per8 real seconds); Resonant → Breach hook (+25% base contribution against specified creature families); Hollow → Listening clasp (15% environmental-drain reduction). Four independent15% source-death rolls, including eligible partial kills; V4's completion power pool/first-world guarantee is superseded. Vanilla payouts and completion dressing/lamp remain. Exact effects/odds are proposals awaiting review, not approved equipment or implementation.
+- **Expansion proposal:** [Until They Answer](DLC_CONCEPT.md) now includes eight new family defender variants, three separate ruin enemies including a final boss, six regional ruin types plus a distant final site, twelve practical items alongside the six V5 unique-item proposals and a separate control reward, cosmetic/building content, and optional investigation/memorial progression. Three formations and a two-special-defender composition limit remain proposals. Core encounter combat is preserved; availability now includes the accepted earned-control direction below. The earlier independent loot review does not cover the DLC.
+- **Latest work: final boss and earned event control.** The user requested a distant temporal ruin, final boss, and an earned item/object to choose whether the Procession occurs, then explicitly selected **world-wide control while ordinary temporal storms continue**. [ENDGAME_DESIGN.md](ENDGAME_DESIGN.md) proposes the Far Relay, Last Custodian, and placeable Closing Bell. Names, boss moves, guaranteed reward, next-storm-only timing, free toggling, installation/removal, lost-item recovery, and multiplayer authority remain proposed. This adds an exception to the earlier unconditional 100%-per-heavy-storm trigger; active-encounter cancellation is not approved.
+- DLC mob concept art remains in [the visual index](VISUALS.md): four-view Relief Engine, four-view Empty Stretcher, and a Linekeeper/Pallbearer/Windlass Locust/Lantern Locust comparison. The original chanter sheet supplied the reference; [exact prompts](concepts/dlc-mob-art-prompts.md) are preserved. These are proposed visuals with approximate geometry, not game-ready assets. No final-boss artwork or runtime verification exists.
+- User review remains open for the DLC, [V5 loot](LOOT_DESIGN.md), [independent loot review](LOOT_REVIEW.md), and [eight existing collectible drafts](LORE_COLLECTIBLES.md). P7–P8 remain Resonance Archives-only; the DLC's R1–R6 are supplementary draft pitches. Main characters stay excluded. [LORE_RESEARCH.md](LORE_RESEARCH.md) and [coverage](LORE_SOURCE_COVERAGE.md) record evidence/gaps; all 19 collectible groups/101 piece references and resonator dialogue were read, other dialogue/context remain. Installed executable FileVersion/ProductVersion rechecked as 1.22.7 on 2026-10-25; base assets and public master source remain separate from effective/runtime behavior. No new external research was performed for the DLC imagination pass.
+
+## Source map
+
+`DESIGN.md` is the canonical agreed-design record. `DLC_CONCEPT.md` is the expansion pitch; `ENDGAME_DESIGN.md` develops the final boss/control reward, separating selected scope from proposed details. `OPEN_QUESTIONS.md` holds remaining choices. `RESEARCH.md` records mechanical vanilla references; `LORE_RESEARCH.md` records narrative evidence/roadmap, and `LORE_SOURCE_COVERAGE.md` accounts for reviewed versus pending material. `VISUALS.md` indexes generated concept images. `../AGENTS.md` governs continuation. `../src`, `../assets`, and `../tests` are reserved only.
+
+## Critical invariants
+
+One procession of four passive chanters per heavy storm while the event is allowed, currently guaranteed in that mode. The user selected an earned world-wide control exception; ordinary temporal storms continue. Approximately 40 HP each; 50% ranged resistance; every chanter death heals survivors to full. Stability drain relative to ordinary storm drain is 3x/2x/1.5x/1x for 4/3/2/1 living chanters; zero ends the storm. Setup produces one shiver, bowtorn, locust, drifter, and bell. Eight defender slots plus the separate one-time bell. All reinforcement sources share the cap, kill-triggered pause, and 3–5-second per-spawn cadence. Families can use any tier. Bell-like 30-block/15-minute absence despawn is intended, without leaving a permanently locked storm.
+
+## Decision record — newest first
+
+- 2026-10-29 | User requested a distant temporal ruin/final boss and an earned object to choose event availability, then explicitly selected world-wide control with ordinary temporal storms continuing. Added [the endgame proposal](ENDGAME_DESIGN.md): Far Relay, Last Custodian, and Closing Bell. Scope/direction is selected; names, moves, guaranteed reward, placement, free switching, next-storm-only timing, recovery, and multiplayer authority remain proposed. Qualified the baseline 100% trigger while preserving core encounter combat. No implementation or gameplay testing.
+
+- 2026-10-29 | User requested concept art for the new mobs, especially the Relief Engine and Empty Stretcher, matching the chanters' Vintage Story style. Generated and saved three sibling sheets using the built-in image tool and original chanter reference; indexed the art and exact prompts. Existing art and agreed mechanics are unchanged; new anatomy/poses remain visual proposals.
+
+- 2026-10-29 | User requested a full enhancement imagining a DLC, explicitly deferring functionality/code. Added [Until They Answer](DLC_CONCEPT.md) with ten new enemy concepts, six ruin types, twelve new practical item concepts, four cosmetic pieces, ten furnishing families, six supplementary record pitches, and encounter/presentation/progression detail. New specifics remain proposed; accepted core mechanics and existing collectible prose are unchanged. No implementation, game changes, new assets, external research, or gameplay testing.
+
+- 2026-10-26 | User requested one powerful themed item from each “miniboss,” around15% rarity without game-breaking power. Developed V5 with four source-specific signatures; passive chanter mechanics unchanged. Removed proposed V4 shared completion power pool/first-world guarantee, retained vanilla supply/completion rewards, recalculated independent-source acquisition and partial-kill rewards, and reopened critic review. Exact specifications remain provisional.
+
+- 2026-10-25 | User requested stronger unique rewards that grant player power. Revised loot to V4 with three equipment relics, retained vanilla supply payouts, and performed a new designer/critic review rather than reuse V3 sign-off. This records the requested direction; exact item effects, acquisition and balance remain provisional. Encounter mechanics and lore prose unchanged.
+
+- 2026-10-25 | User authorized autonomous loot research/proposal documentation and a separate critic. [LOOT_DESIGN.md](LOOT_DESIGN.md) recommends mostly vanilla chanter/completion payouts, two unique rewards, bounded bell salvage, and zero event-guard loot/stability recovery; [LOOT_REVIEW.md](LOOT_REVIEW.md) records two substantive review cycles and final review. All rewards, interaction restrictions, attribution and delivery rules await user review. Accepted encounter/lore design and collectible prose unchanged; no implementation or gameplay testing.
+
+- 2026-10-25 | User requested one or two Archives-only records from the quartet's viewpoint about being trapped and slowly losing their minds. Added P7–P8 as two four-voice transcripts, with early practical appeals followed by memory loss, suspicion, bodily uncertainty, and compulsive rescue calls. Archives-only discovery is explicit; record format/details are draft proposals. Gameplay unchanged.
+
+- 2026-10-25 | User accepted the proposed lost-rescue-operation lore and authorized six collectible drafts styled after existing in-game notes. Four individual and two group notes written as original mod content; identities remain ambiguous, supporting characters are original, and precise wording/placement are pending review. No gameplay mechanics, final specialty mapping, loot, or implementation approved.
+
+- 2026-10-24 | User requested lore integration excluding main-character identities. Developed three explicitly unselected proposals; recommended an abandoned rescue apparatus returning in four otherworldly forms, grounded in bell/recording accounts and resonator dialogue. Quartet, accident, storm effects, and shape/family explanations remain original inventions. No established mechanic or specialty assignment changed.
+
+- 2026-10-24 | User requested meticulous primary-source lore research before identity proposals; then compare multiple interpretations and choose collaboratively before collectible drafts. Pass 1 reviewed handbook text and 13 collectible groups (74 piece references), inventoried 19 groups/25 dialogue files, and began web/context checks. Historical spoilers are separated in the ledger. Relevant dialogue, six collectible groups, environmental/artwork evidence, and causal questions remain. No gameplay design changed.
+
+- 2026-10-24 | Documentation setup authorized at the requested F: project path; gameplay implementation still deferred. Lore/loot is next.
+- 2026-10-24 | Arrival uses a large rift at heavy-storm start, a directional 15–30-second sound buildup, then four chanters emerging and setting up. Follow vanilla rift placement rules; actual compatibility remains to inspect.
+- 2026-10-24 | Refill cadence accepted: fresh random 3–5-second wait before each replacement after the shared pause, including the first; no catch-up burst.
+- 2026-10-24 | Four unique visuals accepted from generated concepts. Bell specialist's head revised from closed frame to open U-shaped tuning fork. Exact specialist-to-other-visual assignment remains a working mapping.
+- 2026-10-24 | Any tier allowed. Initial roster fixed at four family defenders plus bell. Ranged resistance fixed at 50%. Bell-like distance/absence despawn selected. One survivor returns drain to ordinary storm level but still sustains the storm.
+- 2026-10-24 | Shared pause accepted instead of per-defender timers. Strong kills should buy roughly 15–20 seconds, weak drifters about five. Exact formula remains provisional.
+- 2026-10-24 | Eight shared defender slots accepted; opening bell excluded, limited to one spawn total. Bell children count toward the eight.
+- 2026-10-24 | Four specialist pools selected: shiver, bowtorn, locust, bell; all four also spawn drifters. Heavy storms only, every heavy storm for now.
+
+## Validation gates
+
+Current gate: ensure docs and image links resolve and mechanics agree across documents. No runtime verification is possible from this scaffold. Future gameplay gates must prove cap accounting including bell children, no instant/burst replacement, kill-based delay extension, healing, tier selection, heavy-only trigger, accessible placement, and storm exit after death/despawn/reload.
+
+## Open work and risks
+
+See `OPEN_QUESTIONS.md`; its entries are discussion topics, not permission to implement. Important ambiguities: shared pause calculation, initial four defenders versus eventual cap of eight, bell's child pool, portal lifetime, death/absence/reload handling, multiplayer scope, and exact spawn placement rules. Earlier optional-procession/summoning proposals and the old six-defender cap are superseded. No creature-summoning finale is part of this design.

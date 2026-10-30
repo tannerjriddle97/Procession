@@ -1,0 +1,181 @@
+{
+  "code": "lastcustodian",
+  "class": "EntityAgent",
+  "tags": [
+    "mechanical",
+    "habitat-land"
+  ],
+  "weight": 1000,
+  "canClimb": false,
+  "hitboxSize": {
+    "x": 1.8,
+    "y": 2.5
+  },
+  "selectionBoxSize": {
+    "x": 2.0,
+    "y": 2.5
+  },
+  "deadHitboxSize": {
+    "x": 0.8,
+    "y": 0.35
+  },
+  "eyeHeight": 2.35,
+  "attributes": {
+    "onDeathStabilityRecovery": 0,
+    "isMechanical": true,
+    "glitchAffected": true
+  },
+  "drops": [],
+  "client": {
+    "textures": {
+      "charcoal": {
+        "base": "procession:material/charcoal"
+      },
+      "rust": {
+        "base": "procession:material/rust"
+      },
+      "linen": {
+        "base": "procession:material/linen"
+      },
+      "timber": {
+        "base": "procession:material/timber"
+      },
+      "teal": {
+        "base": "procession:material/teal"
+      },
+      "dark": {
+        "base": "procession:material/dark"
+      },
+      "stone": {
+        "base": "procession:material/stone"
+      }
+    },
+    "size": 1,
+    "renderer": "Shape",
+    "animations": [
+      {
+        "animation": "idle",
+        "triggeredBy": {
+          "defaultAnim": true
+        },
+        "code": "idle",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "walk",
+        "code": "walk",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "walk",
+        "code": "run",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "attack",
+        "weight": 10,
+        "code": "attack",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "hurt",
+        "weight": 10,
+        "code": "hurt",
+        "blendMode": "AddAverage"
+      },
+      {
+        "animation": "die",
+        "weight": 20,
+        "triggeredBy": {
+          "onControls": [
+            "dead"
+          ]
+        },
+        "code": "die",
+        "blendMode": "Average"
+      }
+    ],
+    "shape": {
+      "base": "procession:entity/lastcustodian"
+    },
+    "behaviors": [
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "interpolateposition"
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "ProcessionBoss"
+      },
+      {
+        "maxhealth": 420,
+        "code": "health",
+        "currenthealth": 420
+      },
+      {
+        "code": "deaddecay",
+        "hoursToDecay": 0.1
+      },
+      {
+        "code": "taskai",
+        "aitasks": [
+          {
+            "code": "meleeattack",
+            "attackDurationMs": 1200,
+            "animationSpeed": 1,
+            "slot": 1,
+            "damage": 9,
+            "mincooldown": 1400,
+            "damageTier": 2,
+            "damageType": "BluntAttack",
+            "maxcooldown": 2100,
+            "animation": "attack",
+            "entityCodes": [
+              "game:player"
+            ],
+            "damagePlayerAtMs": 650,
+            "priority": 2
+          },
+          {
+            "seekingRange": 24,
+            "searchWaitMs": 1200,
+            "maxcooldown": 500,
+            "movespeed": 0.015,
+            "priority": 1.5,
+            "code": "seekentity",
+            "animation": "walk",
+            "mincooldown": 300,
+            "entityCodes": [
+              "game:player"
+            ],
+            "executionChance": 1,
+            "animationSpeed": 0.8
+          },
+          {
+            "minduration": 1500,
+            "priority": 0.5,
+            "maxduration": 2500,
+            "animation": "idle",
+            "code": "idle"
+          }
+        ]
+      }
+    ]
+  }
+}

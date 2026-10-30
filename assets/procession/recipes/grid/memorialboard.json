@@ -1,0 +1,20 @@
+{
+  "ingredientPattern": "MSM\tSSS\tS_S",
+  "width": 3,
+  "height": 3,
+  "ingredients": {
+    "S": {
+      "code": "game:stick",
+      "type": "item"
+    },
+    "M": {
+      "code": "game:metal-scraps",
+      "type": "block"
+    }
+  },
+  "output": {
+    "type": "block",
+    "quantity": 1,
+    "code": "procession:memorialboard-north"
+  }
+}

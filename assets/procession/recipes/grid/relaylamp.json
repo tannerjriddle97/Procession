@@ -1,0 +1,24 @@
+{
+  "ingredientPattern": "_S_\tTFT\t_S_",
+  "width": 3,
+  "height": 3,
+  "ingredients": {
+    "S": {
+      "code": "game:stick",
+      "type": "item"
+    },
+    "T": {
+      "code": "game:flaxtwine",
+      "type": "item"
+    },
+    "F": {
+      "code": "procession:relayfragment",
+      "type": "item"
+    }
+  },
+  "output": {
+    "type": "block",
+    "quantity": 1,
+    "code": "procession:relaylamp"
+  }
+}

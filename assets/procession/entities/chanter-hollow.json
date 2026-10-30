@@ -1,0 +1,146 @@
+{
+  "code": "chanter-hollow",
+  "class": "EntityAgent",
+  "tags": [
+    "mechanical",
+    "habitat-land"
+  ],
+  "weight": 200,
+  "canClimb": false,
+  "hitboxSize": {
+    "x": 0.8,
+    "y": 2.35
+  },
+  "selectionBoxSize": {
+    "x": 0.9,
+    "y": 2.35
+  },
+  "deadHitboxSize": {
+    "x": 0.8,
+    "y": 0.35
+  },
+  "eyeHeight": 2.2,
+  "attributes": {
+    "onDeathStabilityRecovery": 0,
+    "isMechanical": true,
+    "glitchAffected": true
+  },
+  "drops": [
+    {
+      "type": "item",
+      "quantity": {
+        "var": 0,
+        "avg": 1
+      },
+      "code": "procession:relayfragment"
+    }
+  ],
+  "client": {
+    "textures": {
+      "charcoal": {
+        "base": "procession:material/charcoal"
+      },
+      "rust": {
+        "base": "procession:material/rust"
+      },
+      "linen": {
+        "base": "procession:material/linen"
+      },
+      "timber": {
+        "base": "procession:material/timber"
+      },
+      "teal": {
+        "base": "procession:material/teal"
+      },
+      "dark": {
+        "base": "procession:material/dark"
+      },
+      "stone": {
+        "base": "procession:material/stone"
+      }
+    },
+    "size": 1,
+    "renderer": "Shape",
+    "animations": [
+      {
+        "animation": "idle",
+        "triggeredBy": {
+          "defaultAnim": true
+        },
+        "code": "idle",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "walk",
+        "code": "walk",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "walk",
+        "code": "run",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "attack",
+        "weight": 10,
+        "code": "attack",
+        "blendMode": "Average"
+      },
+      {
+        "animation": "hurt",
+        "weight": 10,
+        "code": "hurt",
+        "blendMode": "AddAverage"
+      },
+      {
+        "animation": "die",
+        "weight": 20,
+        "triggeredBy": {
+          "onControls": [
+            "dead"
+          ]
+        },
+        "code": "die",
+        "blendMode": "Average"
+      }
+    ],
+    "shape": {
+      "base": "procession:entity/chanter-hollow"
+    },
+    "behaviors": [
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "interpolateposition"
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      {
+        "code": "repulseagents"
+      },
+      {
+        "code": "controlledphysics",
+        "stepHeight": 0.6
+      },
+      {
+        "code": "ProcessionChanter"
+      },
+      {
+        "maxhealth": 40,
+        "code": "health",
+        "currenthealth": 40
+      },
+      {
+        "code": "deaddecay",
+        "hoursToDecay": 0.1
+      }
+    ]
+  }
+}

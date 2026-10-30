@@ -1,0 +1,94 @@
+{
+  "code": "closingbell",
+  "class": "ProcessionClosingBell",
+  "shape": {
+    "base": "procession:block/closingbell"
+  },
+  "textures": {
+    "charcoal": {
+      "base": "procession:material/charcoal"
+    },
+    "rust": {
+      "base": "procession:material/rust"
+    },
+    "linen": {
+      "base": "procession:material/linen"
+    },
+    "timber": {
+      "base": "procession:material/timber"
+    },
+    "teal": {
+      "base": "procession:material/teal"
+    },
+    "dark": {
+      "base": "procession:material/dark"
+    },
+    "stone": {
+      "base": "procession:material/stone"
+    }
+  },
+  "creativeinventory": {
+    "decorative": [
+      "*"
+    ],
+    "general": [
+      "*"
+    ]
+  },
+  "blockmaterial": "Metal",
+  "drawtype": "json",
+  "replaceable": 0,
+  "resistance": 4,
+  "lightAbsorption": 0,
+  "lightHsv": [
+    25,
+    3,
+    4
+  ],
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "x2": 0.875,
+    "y2": 1,
+    "z2": 0.875,
+    "z1": 0.125
+  },
+  "selectionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "x2": 0.875,
+    "y2": 1,
+    "z2": 0.875,
+    "z1": 0.125
+  },
+  "sounds": {
+    "hit": "game:block/heavymetal-hit",
+    "place": "game:block/heavymetal-hit",
+    "break": "game:block/heavymetal-hit"
+  },
+  "maxstacksize": 1,
+  "guiTransform": {
+    "scale": 1.1,
+    "rotation": {
+      "z": 0,
+      "x": -15,
+      "y": 25
+    }
+  },
+  "attributes": {
+    "handbook": {
+      "extraSections": [
+        {
+          "text": "Defeat the Last Custodian at the Far Relay. Place this instrument and interact to choose whether future heavy storms contain a Procession. Ordinary temporal storms continue.",
+          "title": "A choice earned"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "ingredientPattern": "SSS\t_T_\t_S_",
+  "width": 3,
+  "height": 3,
+  "ingredients": {
+    "T": {
+      "code": "game:flaxtwine",
+      "type": "item"
+    },
+    "S": {
+      "code": "game:stick",
+      "type": "item"
+    }
+  },
+  "output": {
+    "type": "block",
+    "quantity": 1,
+    "code": "procession:guidepost-north"
+  }
+}

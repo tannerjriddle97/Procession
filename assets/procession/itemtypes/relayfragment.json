@@ -1,0 +1,56 @@
+{
+  "code": "relayfragment",
+  "shape": {
+    "base": "procession:item/relayfragment"
+  },
+  "textures": {
+    "charcoal": {
+      "base": "procession:material/charcoal"
+    },
+    "rust": {
+      "base": "procession:material/rust"
+    },
+    "linen": {
+      "base": "procession:material/linen"
+    },
+    "timber": {
+      "base": "procession:material/timber"
+    },
+    "teal": {
+      "base": "procession:material/teal"
+    },
+    "dark": {
+      "base": "procession:material/dark"
+    },
+    "stone": {
+      "base": "procession:material/stone"
+    }
+  },
+  "maxstacksize": 64,
+  "creativeinventory": {
+    "items": [
+      "*"
+    ],
+    "general": [
+      "*"
+    ]
+  },
+  "guiTransform": {
+    "scale": 2.5,
+    "rotation": {
+      "z": 15,
+      "x": -25,
+      "y": 20
+    }
+  },
+  "attributes": {
+    "handbook": {
+      "extraSections": [
+        {
+          "text": "A guaranteed remnant of a storm chanter. Combine it with a stick to make a route chart. It is a guide, not a key.",
+          "title": "Recovered signal"
+        }
+      ]
+    }
+  }
+}
